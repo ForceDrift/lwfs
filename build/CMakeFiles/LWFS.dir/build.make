@@ -86,30 +86,30 @@ CMakeFiles/LWFS.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/LWFS.dir/main.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/roshaniruku/code/lwfs/main.cpp -o CMakeFiles/LWFS.dir/main.cpp.s
 
-CMakeFiles/LWFS.dir/FileSystemService/FileSystem.cpp.o: CMakeFiles/LWFS.dir/flags.make
-CMakeFiles/LWFS.dir/FileSystemService/FileSystem.cpp.o: /Users/roshaniruku/code/lwfs/FileSystemService/FileSystem.cpp
-CMakeFiles/LWFS.dir/FileSystemService/FileSystem.cpp.o: CMakeFiles/LWFS.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/roshaniruku/code/lwfs/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/LWFS.dir/FileSystemService/FileSystem.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/LWFS.dir/FileSystemService/FileSystem.cpp.o -MF CMakeFiles/LWFS.dir/FileSystemService/FileSystem.cpp.o.d -o CMakeFiles/LWFS.dir/FileSystemService/FileSystem.cpp.o -c /Users/roshaniruku/code/lwfs/FileSystemService/FileSystem.cpp
+CMakeFiles/LWFS.dir/src/FileSystemService/FileSystem.cpp.o: CMakeFiles/LWFS.dir/flags.make
+CMakeFiles/LWFS.dir/src/FileSystemService/FileSystem.cpp.o: /Users/roshaniruku/code/lwfs/src/FileSystemService/FileSystem.cpp
+CMakeFiles/LWFS.dir/src/FileSystemService/FileSystem.cpp.o: CMakeFiles/LWFS.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/roshaniruku/code/lwfs/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/LWFS.dir/src/FileSystemService/FileSystem.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/LWFS.dir/src/FileSystemService/FileSystem.cpp.o -MF CMakeFiles/LWFS.dir/src/FileSystemService/FileSystem.cpp.o.d -o CMakeFiles/LWFS.dir/src/FileSystemService/FileSystem.cpp.o -c /Users/roshaniruku/code/lwfs/src/FileSystemService/FileSystem.cpp
 
-CMakeFiles/LWFS.dir/FileSystemService/FileSystem.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/LWFS.dir/FileSystemService/FileSystem.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/roshaniruku/code/lwfs/FileSystemService/FileSystem.cpp > CMakeFiles/LWFS.dir/FileSystemService/FileSystem.cpp.i
+CMakeFiles/LWFS.dir/src/FileSystemService/FileSystem.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/LWFS.dir/src/FileSystemService/FileSystem.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/roshaniruku/code/lwfs/src/FileSystemService/FileSystem.cpp > CMakeFiles/LWFS.dir/src/FileSystemService/FileSystem.cpp.i
 
-CMakeFiles/LWFS.dir/FileSystemService/FileSystem.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/LWFS.dir/FileSystemService/FileSystem.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/roshaniruku/code/lwfs/FileSystemService/FileSystem.cpp -o CMakeFiles/LWFS.dir/FileSystemService/FileSystem.cpp.s
+CMakeFiles/LWFS.dir/src/FileSystemService/FileSystem.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/LWFS.dir/src/FileSystemService/FileSystem.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/roshaniruku/code/lwfs/src/FileSystemService/FileSystem.cpp -o CMakeFiles/LWFS.dir/src/FileSystemService/FileSystem.cpp.s
 
 # Object files for target LWFS
 LWFS_OBJECTS = \
 "CMakeFiles/LWFS.dir/main.cpp.o" \
-"CMakeFiles/LWFS.dir/FileSystemService/FileSystem.cpp.o"
+"CMakeFiles/LWFS.dir/src/FileSystemService/FileSystem.cpp.o"
 
 # External object files for target LWFS
 LWFS_EXTERNAL_OBJECTS =
 
 LWFS: CMakeFiles/LWFS.dir/main.cpp.o
-LWFS: CMakeFiles/LWFS.dir/FileSystemService/FileSystem.cpp.o
+LWFS: CMakeFiles/LWFS.dir/src/FileSystemService/FileSystem.cpp.o
 LWFS: CMakeFiles/LWFS.dir/build.make
 LWFS: CMakeFiles/LWFS.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/roshaniruku/code/lwfs/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable LWFS"

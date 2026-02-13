@@ -129,30 +129,6 @@ LWFS/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/LWFS.dir/build.make CMakeFiles/LWFS.dir/build
 .PHONY : LWFS/fast
 
-FileSystemService/FileSystem.o: FileSystemService/FileSystem.cpp.o
-.PHONY : FileSystemService/FileSystem.o
-
-# target to build an object file
-FileSystemService/FileSystem.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LWFS.dir/build.make CMakeFiles/LWFS.dir/FileSystemService/FileSystem.cpp.o
-.PHONY : FileSystemService/FileSystem.cpp.o
-
-FileSystemService/FileSystem.i: FileSystemService/FileSystem.cpp.i
-.PHONY : FileSystemService/FileSystem.i
-
-# target to preprocess a source file
-FileSystemService/FileSystem.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LWFS.dir/build.make CMakeFiles/LWFS.dir/FileSystemService/FileSystem.cpp.i
-.PHONY : FileSystemService/FileSystem.cpp.i
-
-FileSystemService/FileSystem.s: FileSystemService/FileSystem.cpp.s
-.PHONY : FileSystemService/FileSystem.s
-
-# target to generate assembly for a file
-FileSystemService/FileSystem.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LWFS.dir/build.make CMakeFiles/LWFS.dir/FileSystemService/FileSystem.cpp.s
-.PHONY : FileSystemService/FileSystem.cpp.s
-
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -177,6 +153,30 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/LWFS.dir/build.make CMakeFiles/LWFS.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+src/FileSystemService/FileSystem.o: src/FileSystemService/FileSystem.cpp.o
+.PHONY : src/FileSystemService/FileSystem.o
+
+# target to build an object file
+src/FileSystemService/FileSystem.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LWFS.dir/build.make CMakeFiles/LWFS.dir/src/FileSystemService/FileSystem.cpp.o
+.PHONY : src/FileSystemService/FileSystem.cpp.o
+
+src/FileSystemService/FileSystem.i: src/FileSystemService/FileSystem.cpp.i
+.PHONY : src/FileSystemService/FileSystem.i
+
+# target to preprocess a source file
+src/FileSystemService/FileSystem.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LWFS.dir/build.make CMakeFiles/LWFS.dir/src/FileSystemService/FileSystem.cpp.i
+.PHONY : src/FileSystemService/FileSystem.cpp.i
+
+src/FileSystemService/FileSystem.s: src/FileSystemService/FileSystem.cpp.s
+.PHONY : src/FileSystemService/FileSystem.s
+
+# target to generate assembly for a file
+src/FileSystemService/FileSystem.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LWFS.dir/build.make CMakeFiles/LWFS.dir/src/FileSystemService/FileSystem.cpp.s
+.PHONY : src/FileSystemService/FileSystem.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -186,12 +186,12 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... LWFS"
-	@echo "... FileSystemService/FileSystem.o"
-	@echo "... FileSystemService/FileSystem.i"
-	@echo "... FileSystemService/FileSystem.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... src/FileSystemService/FileSystem.o"
+	@echo "... src/FileSystemService/FileSystem.i"
+	@echo "... src/FileSystemService/FileSystem.s"
 .PHONY : help
 
 

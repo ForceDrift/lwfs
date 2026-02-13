@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/LWFS.dir/FileSystemService/FileSystem.cpp.o"
-  "CMakeFiles/LWFS.dir/FileSystemService/FileSystem.cpp.o.d"
   "CMakeFiles/LWFS.dir/main.cpp.o"
   "CMakeFiles/LWFS.dir/main.cpp.o.d"
+  "CMakeFiles/LWFS.dir/src/FileSystemService/FileSystem.cpp.o"
+  "CMakeFiles/LWFS.dir/src/FileSystemService/FileSystem.cpp.o.d"
   "LWFS"
   "LWFS.pdb"
 )

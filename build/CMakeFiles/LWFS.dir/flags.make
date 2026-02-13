@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/Users/roshaniruku/code/lwfs/FileSystemService
+CXX_INCLUDES = -I/Users/roshaniruku/code/lwfs/src/FileSystemService
 
 CXX_FLAGSarm64 = -std=c++17 -arch arm64
 
