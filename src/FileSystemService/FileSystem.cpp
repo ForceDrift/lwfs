@@ -37,12 +37,12 @@ uintmax_t Filesystem::getFileSize(std::filesystem::path &file_path) {
   return std::filesystem::file_size(file_path);
 }
 
-std::string getFileType(std::filesystem::path &file_path) {
+std::string Filesystem::getFileType(std::filesystem::path &file_path) {
   return filetype_to_string(std::filesystem::status(file_path));
 }
 
 std::filesystem::file_time_type
-getFileLastModified(std::filesystem::path &file_path) {
+Filesystem::getFileLastModified(std::filesystem::path &file_path) {
 
   return std::filesystem::last_write_time(file_path);
 }

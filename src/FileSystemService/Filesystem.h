@@ -37,6 +37,8 @@ public:
 
   Filesystem(const Filesystem &) = delete;
   void operator=(const Filesystem &) = delete;
+  Filesystem(const Filesystem &&) = delete;
+  void operator=(const Filesystem &&) = delete;
 
   // check Metadata {
   // } + other stuff
