@@ -4,10 +4,12 @@
 #include <filesystem>
 #include <iostream>
 class Filesystem {
+  friend class FileEntry;
+
 private:
   struct Metadata {
     uintmax_t size_;
-    std::string file_type_;
+    std::filesystem::file_type file_type_;
     std::filesystem::file_time_type last_modified_time_;
     std::filesystem::file_time_type time_created_;
     std::filesystem::perms permissions_;
@@ -18,7 +20,7 @@ private:
   std::filesystem::path absolute_path_;
 
   uintmax_t getFileSize(std::filesystem::path &file_path);
-  std::string getFileType(std::filesystem::path &file_path);
+  std::filesystem::file_type getFileType(std::filesystem::path &file_path);
   std::filesystem::file_time_type
 
   getFileLastModified(std::filesystem::path &file_path);
@@ -39,6 +41,7 @@ public:
   void operator=(const Filesystem &) = delete;
   Filesystem(const Filesystem &&) = delete;
   void operator=(const Filesystem &&) = delete;
+  ~Filesystem();
 
   // check Metadata {
   // } + other stuff
