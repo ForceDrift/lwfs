@@ -1,0 +1,3 @@
+/Users/roshaniruku/code/lwfs/CMakeFiles/LWFS.dir
+/Users/roshaniruku/code/lwfs/CMakeFiles/edit_cache.dir
+/Users/roshaniruku/code/lwfs/CMakeFiles/rebuild_cache.dir

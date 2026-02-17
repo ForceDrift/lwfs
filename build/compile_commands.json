@@ -1,0 +1,14 @@
+[
+{
+  "directory": "/Users/roshaniruku/code/lwfs/build",
+  "command": "/usr/bin/c++  -I/Users/roshaniruku/code/lwfs/src/FileSystemService -std=c++20 -arch arm64 -o CMakeFiles/LWFS.dir/main.cpp.o -c /Users/roshaniruku/code/lwfs/main.cpp",
+  "file": "/Users/roshaniruku/code/lwfs/main.cpp",
+  "output": "CMakeFiles/LWFS.dir/main.cpp.o"
+},
+{
+  "directory": "/Users/roshaniruku/code/lwfs/build",
+  "command": "/usr/bin/c++  -I/Users/roshaniruku/code/lwfs/src/FileSystemService -std=c++20 -arch arm64 -o CMakeFiles/LWFS.dir/src/FileSystemService/FileSystem.cpp.o -c /Users/roshaniruku/code/lwfs/src/FileSystemService/FileSystem.cpp",
+  "file": "/Users/roshaniruku/code/lwfs/src/FileSystemService/FileSystem.cpp",
+  "output": "CMakeFiles/LWFS.dir/src/FileSystemService/FileSystem.cpp.o"
+}
+]

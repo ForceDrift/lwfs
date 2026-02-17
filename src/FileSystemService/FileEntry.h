@@ -24,7 +24,10 @@ public:
         entry_name_(getEntryName(this->filesystem_.metadata_.file_type_)),
         children_(getEntryChildren(this->filesystem_.metadata_.file_type_)) {}
 
-  std::vector<std::string> getThisFileEntry() {}
+  const std::string &getName() const { return entry_name_; }
+  std::string getThisFileEntry() {
+    // print name, metadata nad children
+  }
 
   // overload for easy print debug
   //
