@@ -17,11 +17,10 @@ private:
   Filesystem filesystem_;
   std::string entry_name_;
 
-  std::vector<std::unique_ptr<FileEntry>> children_;
+  std::vector<FileEntry> children_;
 
   std::string getEntryName(std::filesystem::file_type type);
-  std::vector<std::unique_ptr<FileEntry>>
-  getEntryChildren(std::filesystem::file_type type);
+  std::vector<FileEntry> getEntryChildren(std::filesystem::file_type type);
 
 public:
   FileEntry(const std::filesystem::path &path)

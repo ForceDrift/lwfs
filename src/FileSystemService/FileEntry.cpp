@@ -1,5 +1,4 @@
 #include "FileEntry.h"
-#include <algorithm>
 #include <cstddef>
 #include <filesystem>
 
@@ -14,13 +13,13 @@ std::string FileEntry::getEntryName(std::filesystem::file_type type) {
   return entry_name;
 }
 
-std::vector<std::unique_ptr<FileEntry>>
+std::vector<FileEntry>
 FileEntry::getEntryChildren(std::filesystem::file_type type) {
   std::vector<FileEntry> children;
   if (type == std::filesystem::file_type::directory) {
     for (auto const &dir_items : std::filesystem::recursive_directory_iterator{
              this->filesystem_.filepath_}) {
-      children.push_back(std::move(FileEntry(dir_items)));
+      children.emplace_back(std::move(FileEntry(dir_items)));
     }
     // get dir children filepaths making sure they are files and not directories
     // iterate over them and convert to file entires
