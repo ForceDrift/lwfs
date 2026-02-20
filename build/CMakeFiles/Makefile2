@@ -63,11 +63,11 @@ CMAKE_BINARY_DIR = /Users/roshaniruku/code/lwfs/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/LWFS.dir/all
+all: CMakeFiles/MyExecutable.dir/all
 .PHONY : all
 
 # The main recursive "codegen" target.
-codegen: CMakeFiles/LWFS.dir/codegen
+codegen: CMakeFiles/MyExecutable.dir/codegen
 .PHONY : codegen
 
 # The main recursive "preinstall" target.
@@ -75,40 +75,40 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/LWFS.dir/clean
+clean: CMakeFiles/MyExecutable.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/LWFS.dir
+# Target rules for target CMakeFiles/MyExecutable.dir
 
 # All Build rule for target.
-CMakeFiles/LWFS.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LWFS.dir/build.make CMakeFiles/LWFS.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LWFS.dir/build.make CMakeFiles/LWFS.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/roshaniruku/code/lwfs/build/CMakeFiles --progress-num=1,2,3 "Built target LWFS"
-.PHONY : CMakeFiles/LWFS.dir/all
+CMakeFiles/MyExecutable.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyExecutable.dir/build.make CMakeFiles/MyExecutable.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyExecutable.dir/build.make CMakeFiles/MyExecutable.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/roshaniruku/code/lwfs/build/CMakeFiles --progress-num=1,2,3,4,5 "Built target MyExecutable"
+.PHONY : CMakeFiles/MyExecutable.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/LWFS.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/roshaniruku/code/lwfs/build/CMakeFiles 3
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/LWFS.dir/all
+CMakeFiles/MyExecutable.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/roshaniruku/code/lwfs/build/CMakeFiles 5
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/MyExecutable.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/roshaniruku/code/lwfs/build/CMakeFiles 0
-.PHONY : CMakeFiles/LWFS.dir/rule
+.PHONY : CMakeFiles/MyExecutable.dir/rule
 
 # Convenience name for target.
-LWFS: CMakeFiles/LWFS.dir/rule
-.PHONY : LWFS
+MyExecutable: CMakeFiles/MyExecutable.dir/rule
+.PHONY : MyExecutable
 
 # codegen rule for target.
-CMakeFiles/LWFS.dir/codegen:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LWFS.dir/build.make CMakeFiles/LWFS.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/roshaniruku/code/lwfs/build/CMakeFiles --progress-num=1,2,3 "Finished codegen for target LWFS"
-.PHONY : CMakeFiles/LWFS.dir/codegen
+CMakeFiles/MyExecutable.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyExecutable.dir/build.make CMakeFiles/MyExecutable.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/roshaniruku/code/lwfs/build/CMakeFiles --progress-num=1,2,3,4,5 "Finished codegen for target MyExecutable"
+.PHONY : CMakeFiles/MyExecutable.dir/codegen
 
 # clean rule for target.
-CMakeFiles/LWFS.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LWFS.dir/build.make CMakeFiles/LWFS.dir/clean
-.PHONY : CMakeFiles/LWFS.dir/clean
+CMakeFiles/MyExecutable.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyExecutable.dir/build.make CMakeFiles/MyExecutable.dir/clean
+.PHONY : CMakeFiles/MyExecutable.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

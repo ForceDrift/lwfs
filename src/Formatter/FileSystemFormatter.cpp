@@ -1,4 +1,4 @@
-#include "FileEntry.h"
+// #include "FileEntry.h"
 #include <chrono>
 #include <cstdint>
 #include <filesystem>
@@ -54,11 +54,11 @@ std::string getTimeString(std::filesystem::file_time_type time) {
 
   return std::format("File write time is {}\n", systemTime);
 }
-std::string getStringChildren(std::vector<FileEntry> &a) {
-  std::string result;
-  for (const auto &file : a) {
-    // get children name
-    result += file.getName();
-  }
-  return result;
-}
+// std::string getStringChildren(std::vector<FileEntry> &a) {
+//   std::string result;
+//   for (const auto &file : a) {
+//     // get children name
+//     result += file.getName();
+//   }
+//   return result;
+// }

@@ -8,6 +8,18 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
 
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
-add_executable(LWFS main.cpp src/FileSystemService/FileSystem.cpp)
-target_include_directories(LWFS PRIVATE src/FileSystemService)
+add_executable(MyExecutable
+    main.cpp
+)
 
+target_sources(MyExecutable PRIVATE
+    src/FileSystemService/FileEntry.cpp
+    src/FileSystemService/FileSystem.cpp
+)
+target_sources(MyExecutable PRIVATE
+    src/Formatter/FileSystemFormatter.cpp
+)
+target_include_directories(MyExecutable PRIVATE 
+    src/FileSystemService 
+    src/Formatter
+)

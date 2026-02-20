@@ -2,7 +2,6 @@
 
 #include <cstdint>
 #include <filesystem>
-#include <iostream>
 class Filesystem {
   friend class FileEntry;
 

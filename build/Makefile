@@ -117,24 +117,24 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named LWFS
+# Target rules for targets named MyExecutable
 
 # Build rule for target.
-LWFS: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 LWFS
-.PHONY : LWFS
+MyExecutable: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MyExecutable
+.PHONY : MyExecutable
 
 # fast build rule for target.
-LWFS/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LWFS.dir/build.make CMakeFiles/LWFS.dir/build
-.PHONY : LWFS/fast
+MyExecutable/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyExecutable.dir/build.make CMakeFiles/MyExecutable.dir/build
+.PHONY : MyExecutable/fast
 
 main.o: main.cpp.o
 .PHONY : main.o
 
 # target to build an object file
 main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LWFS.dir/build.make CMakeFiles/LWFS.dir/main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyExecutable.dir/build.make CMakeFiles/MyExecutable.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -142,7 +142,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LWFS.dir/build.make CMakeFiles/LWFS.dir/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyExecutable.dir/build.make CMakeFiles/MyExecutable.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -150,15 +150,39 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LWFS.dir/build.make CMakeFiles/LWFS.dir/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyExecutable.dir/build.make CMakeFiles/MyExecutable.dir/main.cpp.s
 .PHONY : main.cpp.s
+
+src/FileSystemService/FileEntry.o: src/FileSystemService/FileEntry.cpp.o
+.PHONY : src/FileSystemService/FileEntry.o
+
+# target to build an object file
+src/FileSystemService/FileEntry.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyExecutable.dir/build.make CMakeFiles/MyExecutable.dir/src/FileSystemService/FileEntry.cpp.o
+.PHONY : src/FileSystemService/FileEntry.cpp.o
+
+src/FileSystemService/FileEntry.i: src/FileSystemService/FileEntry.cpp.i
+.PHONY : src/FileSystemService/FileEntry.i
+
+# target to preprocess a source file
+src/FileSystemService/FileEntry.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyExecutable.dir/build.make CMakeFiles/MyExecutable.dir/src/FileSystemService/FileEntry.cpp.i
+.PHONY : src/FileSystemService/FileEntry.cpp.i
+
+src/FileSystemService/FileEntry.s: src/FileSystemService/FileEntry.cpp.s
+.PHONY : src/FileSystemService/FileEntry.s
+
+# target to generate assembly for a file
+src/FileSystemService/FileEntry.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyExecutable.dir/build.make CMakeFiles/MyExecutable.dir/src/FileSystemService/FileEntry.cpp.s
+.PHONY : src/FileSystemService/FileEntry.cpp.s
 
 src/FileSystemService/FileSystem.o: src/FileSystemService/FileSystem.cpp.o
 .PHONY : src/FileSystemService/FileSystem.o
 
 # target to build an object file
 src/FileSystemService/FileSystem.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LWFS.dir/build.make CMakeFiles/LWFS.dir/src/FileSystemService/FileSystem.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyExecutable.dir/build.make CMakeFiles/MyExecutable.dir/src/FileSystemService/FileSystem.cpp.o
 .PHONY : src/FileSystemService/FileSystem.cpp.o
 
 src/FileSystemService/FileSystem.i: src/FileSystemService/FileSystem.cpp.i
@@ -166,7 +190,7 @@ src/FileSystemService/FileSystem.i: src/FileSystemService/FileSystem.cpp.i
 
 # target to preprocess a source file
 src/FileSystemService/FileSystem.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LWFS.dir/build.make CMakeFiles/LWFS.dir/src/FileSystemService/FileSystem.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyExecutable.dir/build.make CMakeFiles/MyExecutable.dir/src/FileSystemService/FileSystem.cpp.i
 .PHONY : src/FileSystemService/FileSystem.cpp.i
 
 src/FileSystemService/FileSystem.s: src/FileSystemService/FileSystem.cpp.s
@@ -174,8 +198,32 @@ src/FileSystemService/FileSystem.s: src/FileSystemService/FileSystem.cpp.s
 
 # target to generate assembly for a file
 src/FileSystemService/FileSystem.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LWFS.dir/build.make CMakeFiles/LWFS.dir/src/FileSystemService/FileSystem.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyExecutable.dir/build.make CMakeFiles/MyExecutable.dir/src/FileSystemService/FileSystem.cpp.s
 .PHONY : src/FileSystemService/FileSystem.cpp.s
+
+src/Formatter/FileSystemFormatter.o: src/Formatter/FileSystemFormatter.cpp.o
+.PHONY : src/Formatter/FileSystemFormatter.o
+
+# target to build an object file
+src/Formatter/FileSystemFormatter.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyExecutable.dir/build.make CMakeFiles/MyExecutable.dir/src/Formatter/FileSystemFormatter.cpp.o
+.PHONY : src/Formatter/FileSystemFormatter.cpp.o
+
+src/Formatter/FileSystemFormatter.i: src/Formatter/FileSystemFormatter.cpp.i
+.PHONY : src/Formatter/FileSystemFormatter.i
+
+# target to preprocess a source file
+src/Formatter/FileSystemFormatter.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyExecutable.dir/build.make CMakeFiles/MyExecutable.dir/src/Formatter/FileSystemFormatter.cpp.i
+.PHONY : src/Formatter/FileSystemFormatter.cpp.i
+
+src/Formatter/FileSystemFormatter.s: src/Formatter/FileSystemFormatter.cpp.s
+.PHONY : src/Formatter/FileSystemFormatter.s
+
+# target to generate assembly for a file
+src/Formatter/FileSystemFormatter.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyExecutable.dir/build.make CMakeFiles/MyExecutable.dir/src/Formatter/FileSystemFormatter.cpp.s
+.PHONY : src/Formatter/FileSystemFormatter.cpp.s
 
 # Help Target
 help:
@@ -185,13 +233,19 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... LWFS"
+	@echo "... MyExecutable"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... src/FileSystemService/FileEntry.o"
+	@echo "... src/FileSystemService/FileEntry.i"
+	@echo "... src/FileSystemService/FileEntry.s"
 	@echo "... src/FileSystemService/FileSystem.o"
 	@echo "... src/FileSystemService/FileSystem.i"
 	@echo "... src/FileSystemService/FileSystem.s"
+	@echo "... src/Formatter/FileSystemFormatter.o"
+	@echo "... src/Formatter/FileSystemFormatter.i"
+	@echo "... src/Formatter/FileSystemFormatter.s"
 .PHONY : help
 
 

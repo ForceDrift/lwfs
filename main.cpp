@@ -1,4 +1,4 @@
-#include "FileEntry.h"
+#include "src/FileSystemService/FileEntry.h"
 #include "src/FileSystemService/Filesystem.h"
 #include <filesystem>
 #include <iostream>
@@ -9,6 +9,7 @@ int main() {
       "/Users/roshaniruku/Downloads/Add a heading.png";
 
   FileEntry fe(test_path);
+  std::cout << "Hello";
   std::cout << &fe << std::endl;
   return 0;
 }
