@@ -14,7 +14,7 @@ std::string FileEntry::getEntryName(std::filesystem::file_type type) {
   return entry_name;
 }
 
-std::vector<FileEntry>
+std::vector<std::unique_ptr<FileEntry>>
 FileEntry::getEntryChildren(std::filesystem::file_type type) {
   std::vector<FileEntry> children;
   if (type == std::filesystem::file_type::directory) {

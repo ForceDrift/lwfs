@@ -11,9 +11,7 @@ std::string getPathString(std::filesystem::path path) {
 }
 std::string getSizeString(uintmax_t size) { return std::to_string(size); }
 
-std::string getFileType(const std::filesystem::path &p,
-                        std::filesystem::file_status s) {
-  std::cout << p;
+std::string getFileType(std::filesystem::file_status s) {
   switch (s.type()) {
   case std::filesystem::file_type::none:
     return "none";
