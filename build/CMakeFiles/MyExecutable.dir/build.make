@@ -86,24 +86,10 @@ CMakeFiles/MyExecutable.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MyExecutable.dir/main.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/roshaniruku/code/lwfs/main.cpp -o CMakeFiles/MyExecutable.dir/main.cpp.s
 
-CMakeFiles/MyExecutable.dir/src/FileSystemService/FileEntry.cpp.o: CMakeFiles/MyExecutable.dir/flags.make
-CMakeFiles/MyExecutable.dir/src/FileSystemService/FileEntry.cpp.o: /Users/roshaniruku/code/lwfs/src/FileSystemService/FileEntry.cpp
-CMakeFiles/MyExecutable.dir/src/FileSystemService/FileEntry.cpp.o: CMakeFiles/MyExecutable.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/roshaniruku/code/lwfs/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/MyExecutable.dir/src/FileSystemService/FileEntry.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyExecutable.dir/src/FileSystemService/FileEntry.cpp.o -MF CMakeFiles/MyExecutable.dir/src/FileSystemService/FileEntry.cpp.o.d -o CMakeFiles/MyExecutable.dir/src/FileSystemService/FileEntry.cpp.o -c /Users/roshaniruku/code/lwfs/src/FileSystemService/FileEntry.cpp
-
-CMakeFiles/MyExecutable.dir/src/FileSystemService/FileEntry.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MyExecutable.dir/src/FileSystemService/FileEntry.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/roshaniruku/code/lwfs/src/FileSystemService/FileEntry.cpp > CMakeFiles/MyExecutable.dir/src/FileSystemService/FileEntry.cpp.i
-
-CMakeFiles/MyExecutable.dir/src/FileSystemService/FileEntry.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MyExecutable.dir/src/FileSystemService/FileEntry.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/roshaniruku/code/lwfs/src/FileSystemService/FileEntry.cpp -o CMakeFiles/MyExecutable.dir/src/FileSystemService/FileEntry.cpp.s
-
 CMakeFiles/MyExecutable.dir/src/FileSystemService/FileSystem.cpp.o: CMakeFiles/MyExecutable.dir/flags.make
 CMakeFiles/MyExecutable.dir/src/FileSystemService/FileSystem.cpp.o: /Users/roshaniruku/code/lwfs/src/FileSystemService/FileSystem.cpp
 CMakeFiles/MyExecutable.dir/src/FileSystemService/FileSystem.cpp.o: CMakeFiles/MyExecutable.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/roshaniruku/code/lwfs/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/MyExecutable.dir/src/FileSystemService/FileSystem.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/roshaniruku/code/lwfs/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/MyExecutable.dir/src/FileSystemService/FileSystem.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyExecutable.dir/src/FileSystemService/FileSystem.cpp.o -MF CMakeFiles/MyExecutable.dir/src/FileSystemService/FileSystem.cpp.o.d -o CMakeFiles/MyExecutable.dir/src/FileSystemService/FileSystem.cpp.o -c /Users/roshaniruku/code/lwfs/src/FileSystemService/FileSystem.cpp
 
 CMakeFiles/MyExecutable.dir/src/FileSystemService/FileSystem.cpp.i: cmake_force
@@ -117,7 +103,7 @@ CMakeFiles/MyExecutable.dir/src/FileSystemService/FileSystem.cpp.s: cmake_force
 CMakeFiles/MyExecutable.dir/src/Formatter/FileSystemFormatter.cpp.o: CMakeFiles/MyExecutable.dir/flags.make
 CMakeFiles/MyExecutable.dir/src/Formatter/FileSystemFormatter.cpp.o: /Users/roshaniruku/code/lwfs/src/Formatter/FileSystemFormatter.cpp
 CMakeFiles/MyExecutable.dir/src/Formatter/FileSystemFormatter.cpp.o: CMakeFiles/MyExecutable.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/roshaniruku/code/lwfs/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/MyExecutable.dir/src/Formatter/FileSystemFormatter.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/roshaniruku/code/lwfs/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/MyExecutable.dir/src/Formatter/FileSystemFormatter.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyExecutable.dir/src/Formatter/FileSystemFormatter.cpp.o -MF CMakeFiles/MyExecutable.dir/src/Formatter/FileSystemFormatter.cpp.o.d -o CMakeFiles/MyExecutable.dir/src/Formatter/FileSystemFormatter.cpp.o -c /Users/roshaniruku/code/lwfs/src/Formatter/FileSystemFormatter.cpp
 
 CMakeFiles/MyExecutable.dir/src/Formatter/FileSystemFormatter.cpp.i: cmake_force
@@ -131,7 +117,6 @@ CMakeFiles/MyExecutable.dir/src/Formatter/FileSystemFormatter.cpp.s: cmake_force
 # Object files for target MyExecutable
 MyExecutable_OBJECTS = \
 "CMakeFiles/MyExecutable.dir/main.cpp.o" \
-"CMakeFiles/MyExecutable.dir/src/FileSystemService/FileEntry.cpp.o" \
 "CMakeFiles/MyExecutable.dir/src/FileSystemService/FileSystem.cpp.o" \
 "CMakeFiles/MyExecutable.dir/src/Formatter/FileSystemFormatter.cpp.o"
 
@@ -139,12 +124,11 @@ MyExecutable_OBJECTS = \
 MyExecutable_EXTERNAL_OBJECTS =
 
 MyExecutable: CMakeFiles/MyExecutable.dir/main.cpp.o
-MyExecutable: CMakeFiles/MyExecutable.dir/src/FileSystemService/FileEntry.cpp.o
 MyExecutable: CMakeFiles/MyExecutable.dir/src/FileSystemService/FileSystem.cpp.o
 MyExecutable: CMakeFiles/MyExecutable.dir/src/Formatter/FileSystemFormatter.cpp.o
 MyExecutable: CMakeFiles/MyExecutable.dir/build.make
 MyExecutable: CMakeFiles/MyExecutable.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/roshaniruku/code/lwfs/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable MyExecutable"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/roshaniruku/code/lwfs/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable MyExecutable"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/MyExecutable.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

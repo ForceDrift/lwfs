@@ -153,30 +153,6 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyExecutable.dir/build.make CMakeFiles/MyExecutable.dir/main.cpp.s
 .PHONY : main.cpp.s
 
-src/FileSystemService/FileEntry.o: src/FileSystemService/FileEntry.cpp.o
-.PHONY : src/FileSystemService/FileEntry.o
-
-# target to build an object file
-src/FileSystemService/FileEntry.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyExecutable.dir/build.make CMakeFiles/MyExecutable.dir/src/FileSystemService/FileEntry.cpp.o
-.PHONY : src/FileSystemService/FileEntry.cpp.o
-
-src/FileSystemService/FileEntry.i: src/FileSystemService/FileEntry.cpp.i
-.PHONY : src/FileSystemService/FileEntry.i
-
-# target to preprocess a source file
-src/FileSystemService/FileEntry.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyExecutable.dir/build.make CMakeFiles/MyExecutable.dir/src/FileSystemService/FileEntry.cpp.i
-.PHONY : src/FileSystemService/FileEntry.cpp.i
-
-src/FileSystemService/FileEntry.s: src/FileSystemService/FileEntry.cpp.s
-.PHONY : src/FileSystemService/FileEntry.s
-
-# target to generate assembly for a file
-src/FileSystemService/FileEntry.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyExecutable.dir/build.make CMakeFiles/MyExecutable.dir/src/FileSystemService/FileEntry.cpp.s
-.PHONY : src/FileSystemService/FileEntry.cpp.s
-
 src/FileSystemService/FileSystem.o: src/FileSystemService/FileSystem.cpp.o
 .PHONY : src/FileSystemService/FileSystem.o
 
@@ -237,9 +213,6 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... src/FileSystemService/FileEntry.o"
-	@echo "... src/FileSystemService/FileEntry.i"
-	@echo "... src/FileSystemService/FileEntry.s"
 	@echo "... src/FileSystemService/FileSystem.o"
 	@echo "... src/FileSystemService/FileSystem.i"
 	@echo "... src/FileSystemService/FileSystem.s"

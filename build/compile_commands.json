@@ -7,12 +7,6 @@
 },
 {
   "directory": "/Users/roshaniruku/code/lwfs/build",
-  "command": "/usr/bin/c++  -I/Users/roshaniruku/code/lwfs/src/FileSystemService -I/Users/roshaniruku/code/lwfs/src/Formatter -std=c++20 -arch arm64 -o CMakeFiles/MyExecutable.dir/src/FileSystemService/FileEntry.cpp.o -c /Users/roshaniruku/code/lwfs/src/FileSystemService/FileEntry.cpp",
-  "file": "/Users/roshaniruku/code/lwfs/src/FileSystemService/FileEntry.cpp",
-  "output": "CMakeFiles/MyExecutable.dir/src/FileSystemService/FileEntry.cpp.o"
-},
-{
-  "directory": "/Users/roshaniruku/code/lwfs/build",
   "command": "/usr/bin/c++  -I/Users/roshaniruku/code/lwfs/src/FileSystemService -I/Users/roshaniruku/code/lwfs/src/Formatter -std=c++20 -arch arm64 -o CMakeFiles/MyExecutable.dir/src/FileSystemService/FileSystem.cpp.o -c /Users/roshaniruku/code/lwfs/src/FileSystemService/FileSystem.cpp",
   "file": "/Users/roshaniruku/code/lwfs/src/FileSystemService/FileSystem.cpp",
   "output": "CMakeFiles/MyExecutable.dir/src/FileSystemService/FileSystem.cpp.o"

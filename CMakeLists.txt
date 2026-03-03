@@ -13,13 +13,13 @@ add_executable(MyExecutable
 )
 
 target_sources(MyExecutable PRIVATE
-    src/FileSystemService/FileEntry.cpp
     src/FileSystemService/FileSystem.cpp
 )
 target_sources(MyExecutable PRIVATE
     src/Formatter/FileSystemFormatter.cpp
 )
 target_include_directories(MyExecutable PRIVATE 
+
     src/FileSystemService 
     src/Formatter
 )

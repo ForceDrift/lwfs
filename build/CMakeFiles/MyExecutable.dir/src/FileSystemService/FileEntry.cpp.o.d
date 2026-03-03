@@ -2,6 +2,7 @@ CMakeFiles/MyExecutable.dir/src/FileSystemService/FileEntry.cpp.o: \
   /Users/roshaniruku/code/lwfs/src/FileSystemService/FileEntry.cpp \
   /Users/roshaniruku/code/lwfs/src/FileSystemService/FileEntry.h \
   /Users/roshaniruku/code/lwfs/src/FileSystemService/../Formatter/FileSystemFormatter.h \
+  /Users/roshaniruku/code/lwfs/src/FileSystemService/../Formatter/../FileSystemService/FileEntry.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/filesystem \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__config \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__config_site \

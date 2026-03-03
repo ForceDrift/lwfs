@@ -1,9 +1,11 @@
 #pragma once
 
+#include <algorithm>
 #include <cstdint>
 #include <filesystem>
+#include <memory>
+#include <new>
 class Filesystem {
-  friend class FileEntry;
 
 private:
   struct Metadata {
@@ -18,31 +20,37 @@ private:
   std::filesystem::path filepath_;
   std::filesystem::path absolute_path_;
 
-  uintmax_t getFileSize(std::filesystem::path &file_path);
-  std::filesystem::file_type getFileType(std::filesystem::path &file_path);
+  std::vector<Filesystem> children_;
+
+  uintmax_t getFileSize(std::filesystem::path &file_path) const noexcept;
+
+  std::filesystem::file_type
+  getFileType(std::filesystem::path &file_path) const noexcept;
+
   std::filesystem::file_time_type
 
-  getFileLastModified(std::filesystem::path &file_path);
+  getFileLastModified(std::filesystem::path &file_path) const noexcept;
   std::filesystem::file_time_type
-  getTimeCreated(std::filesystem::path &file_path);
+  getTimeCreated(std::filesystem::path &file_path) const noexcept;
 
   std::filesystem::perms getFilePermissions(std::filesystem::path &file_path);
-  // permissions, created, extension user owner, symmlink
 
 public:
   Filesystem(std::filesystem::path path)
-      : filepath_(path),
+      : filepath_(std::move(path)),
         metadata_{.size_ = getFileSize(path),
                   .file_type_ = getFileType(path),
                   .last_modified_time_ = getFileLastModified(path)} {}
-
-  Filesystem(const Filesystem &) = delete;
-  void operator=(const Filesystem &) = delete;
-  Filesystem &operator=(Filesystem &&) noexcept = default;
-
+  // remove copy constructor
+  //
+  Filesystem(const Filesystem &) = default;
+  Filesystem &operator=(const Filesystem &) = default;
+  // include move constructor
+  //
   Filesystem(Filesystem &&) = default;
-  ~Filesystem();
+  Filesystem &operator=(Filesystem &&) = default;
 
-  // check Metadata {
-  // } + other stuff
+  void loadChildren();
+  void printTree(const std::string &prefix, bool isLast = true) const;
+  bool isDirectory() const noexcept;
 };
